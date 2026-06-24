@@ -201,52 +201,67 @@ public class June24_2026_Revision {
 		
 		
 // Find first and second lowest element from an array
+//		int [] x = {10,30,20,50,20,60,80,40,90,50};
+//		
+//		int min1 = 0;
+//		int min2 = 0;
+//		
+//		if(x[0]<x[1])
+//		{
+//			min1=x[0];
+//			min2=x[1];
+//		}
+//		else
+//		{
+//			min1=x[1];
+//			min2=x[0];
+//		}
+//		
+//		
+//		for(int i=2;i<x.length;i++)
+//		{
+//			if(x[i]<x[0])
+//			{	min2=min1;
+//			    min1=x[i];
+//			}   
+//			    else if(x[i]<min2)
+//			    {
+//			    min2=x[i];	
+//			    }	
+//			
+//			
+//		}
+//		
+//	System.out.println("First lowest number in array is : "+min1);	
+//		
+//	System.out.println("Second lowest number in array is : "+min2);	
+		
+		
+		
+		
+// Reverse sort elements of an array
+		
 		int [] x = {10,30,20,50,20,60,80,40,90,50};
 		
-		int min1 = 0;
-		int min2 = 0;
+	for(int i=0;i<x.length;i++)	
+	
+{
+		for(int j=i+1;j<x.length;j++)
+		{		
+	     
+	
+	      if(x[i]<x[j])
+	      {
+		   int temp = x[i];
+		   x[i] = x[j];
+		   x[j] = temp;
+		     
+	      }
+	   }
+	
+}
 		
-		if(x[0]<x[1])
-		{
-			min1=x[0];
-			min2=x[1];
-		}
-		else
-		{
-			min1=x[1];
-			min2=x[0];
-		}
-		
-		
-		for(int i=2;i<x.length;i++)
-		{
-			if(x[i]<x[0])
-			{	min2=min1;
-			    min1=x[i];
-			}   
-			    else if(x[i]<min2)
-			    {
-			    min2=x[i];	
-			    }	
-			
-			
-		}
-		
-	System.out.println("First lowest number in array is : "+min1);	
-		
-	System.out.println("Second lowest number in array is : "+min2);	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+System.out.println(Arrays.toString(x));		
 		
 		
 		
