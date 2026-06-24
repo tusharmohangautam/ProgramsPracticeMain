@@ -1,5 +1,6 @@
 package interview2026;
 
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -110,72 +111,130 @@ public class June24_2026_Revision {
 		
 		
 		
-String s = "12345A"; // check whether string contains only digits or not
-
-boolean isOnlyDigits = true;
-
-
-for(char ch : s.toCharArray())
-{
-	if(!Character.isDigit(ch))
-	{
-		isOnlyDigits = false;
-		break;
-	}
-	
-}
+		/*
+		 * String s = "12345"; // check whether string contains only digits or not
+		 * 
+		 * boolean isOnlyDigits = true;
+		 * 
+		 * 
+		 * for(char ch : s.toCharArray()) { if(!Character.isDigit(ch)) { isOnlyDigits =
+		 * false; break; }
+		 * 
+		 * }
+		 * 
+		 * 
+		 * if(isOnlyDigits==true) {
+		 * System.out.println("String only contains digits....."); }
+		 * 
+		 * else { System.out.println("String contains both digits and characters....");
+		 * }
+		 */		
 		
 		
-if(isOnlyDigits==true)		
-{
-	System.out.println("String only contains digits.....");
-}
-		
-else
-{
-	System.out.println("String contains both digits and characters....");
-}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		/*
+		 * int [] x = {10,30,20,50,20,60,80,40,90,50};
+		 * 
+		 * System.out.println(x.length); // Find length of array
+		 * 
+		 * System.out.println(Arrays.toString(x)); // Printing Array values
+		 * 
+		 * // Find count of each element in array
+		 * 
+		 * Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+		 * 
+		 * for(int s : x) { if(map.containsKey(s)) { map.put(s, map.get(s)+1); } else {
+		 * map.put(s, 1); } }
+		 * 
+		 * System.out.println("Printing count of each element in array ....");
+		 * for(Map.Entry<Integer,Integer> entry : map.entrySet()) {
+		 * if(entry.getValue()>1) System.out.println(entry.getKey()
+		 * +" "+entry.getValue());
+		 * 
+		 * 
+		 * }
+		 */
 		
 		
 		
 		
 		
+		/*
+		 * // Removing duplicate elements from an array
+		 * 
+		 * int [] x = {10,30,20,50,20,60,80,40,90,50};
+		 * 
+		 * 
+		 * Set<Integer> set = new LinkedHashSet<Integer>();
+		 * 
+		 * for(int y : x) { set.add(y); // Stored unique values in Set collection }
+		 * 
+		 * 
+		 * int [] z = new int [set.size()];
+		 * 
+		 * int count = 0;
+		 * 
+		 * 
+		 * for(int y1 : set) { z[count++]=y1;
+		 * 
+		 * }
+		 * 
+		 * System.out.println(Arrays.toString(z));
+		 */		
+		
+		
+		/*
+		 * // Find first and second highest element from an array int [] x =
+		 * {10,30,20,50,20,60,80,40,90,50};
+		 * 
+		 * int max1=0; int max2=0;
+		 * 
+		 * if(x[0]>x[1]) { max1=x[0]; max2=x[1]; } else { max1=x[1]; max2=x[0]; }
+		 * 
+		 * for(int i=2;i<x.length;i++) { if(x[i]>max1) { max2=max1; max1=x[i]; } else
+		 * if(x[i]>max2) { max2=x[i]; } }
+		 * 
+		 * System.out.println("First highest element from array is : " + max1);
+		 * 
+		 * System.out.println("Second highest element from array is : " + max2);
+		 */		
 		
 		
 		
+// Find first and second lowest element from an array
+		int [] x = {10,30,20,50,20,60,80,40,90,50};
+		
+		int min1 = 0;
+		int min2 = 0;
+		
+		if(x[0]<x[1])
+		{
+			min1=x[0];
+			min2=x[1];
+		}
+		else
+		{
+			min1=x[1];
+			min2=x[0];
+		}
 		
 		
+		for(int i=2;i<x.length;i++)
+		{
+			if(x[i]<x[0])
+			{	min2=min1;
+			    min1=x[i];
+			}   
+			    else if(x[i]<min2)
+			    {
+			    min2=x[i];	
+			    }	
+			
+			
+		}
 		
+	System.out.println("First lowest number in array is : "+min1);	
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	System.out.println("Second lowest number in array is : "+min2);	
 		
 		
 		
