@@ -7,6 +7,7 @@ public class Find_SubArray_check_target_sum {
 		
 		int[] arr = {1, 4, 20, 3, 10, 5};
         int target = 33; // 20 + 3 + 10 = 33
+          
         
         for(int i=0; i<arr.length; i++)
         {
