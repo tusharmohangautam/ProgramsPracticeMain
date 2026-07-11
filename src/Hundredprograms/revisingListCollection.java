@@ -3,7 +3,7 @@ package Hundredprograms;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class revisingListCollection {
+public class RevisingListCollection {
 
 	public static void main(String[] args) {
 

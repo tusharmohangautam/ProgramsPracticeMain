@@ -3,7 +3,7 @@ package Hundredprograms;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class ReadingtestFromFile {
+public class ReadingTextFromFile {
 
 	public static void main(String[] args) throws IOException  {
 

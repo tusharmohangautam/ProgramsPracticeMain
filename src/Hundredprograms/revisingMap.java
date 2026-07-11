@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
 
-public class revisingMap {
+public class RevisingMap {
 
 	public static void main(String[] args) {
 

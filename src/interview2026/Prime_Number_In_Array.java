@@ -20,19 +20,19 @@ public class Prime_Number_In_Array {
 			int count = 0;
 			
 			// Step 2: Try dividing 'num' by every number from 1 up to 'num'
-			for(int j=1;j<=num;j++)
-		 {
-			if(num%j==0)
-			{
-				count++;
+			    for(int j=1;j<=num;j++)
+		       {
+			      if(num%j==0)
+			      {
+				   count++;
 				
-			}
-		 }	
+			       }
+		        }	
 			
-			if(count==2)
-			{
-				System.out.println(num + " ");
-			}
+			   if(count==2)
+			   {
+				 System.out.println(num + " ");
+			   }
 		   // inner for loop closed
 			
 		} // outer for loop closed
