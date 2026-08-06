@@ -1,7 +1,8 @@
 package Revision_July_2026;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Revising_String_Programs {
 
@@ -89,7 +90,6 @@ public class Revising_String_Programs {
 		 * System.out.println(S.reverse());
 		 */
 
-		
 		/*
 		 * String s = "siyana";
 		 * 
@@ -99,7 +99,6 @@ public class Revising_String_Programs {
 		 * 
 		 * System.out.println("Output reverse string is : " + finalStr);
 		 */
-		 
 
 		/*
 		 * String s = "siyana";
@@ -111,10 +110,9 @@ public class Revising_String_Programs {
 		 * for (int i = ch.length - 1; i >= 0; i--) { finalStr = finalStr + ch[i]; }
 		 * 
 		 * System.out.println(finalStr);
-	
+		 * 
 		 */
-		
-		
+
 		/*
 		 * int x = 13;
 		 * 
@@ -131,36 +129,124 @@ public class Revising_String_Programs {
 		 * else { System.out.println("X is not a prime number...."); }
 		 * 
 		 */
+
+		/*
+		 * int [] x = {20,13,17,80,4,33,7,73};
+		 * 
+		 * for(int i =0; i<x.length;i++) { int checkPrimeNum = x[i];
+		 * 
+		 * int count = 0;
+		 * 
+		 * for(int j = 1;j<=checkPrimeNum ; j++) { if(checkPrimeNum%j==0) { count++; } }
+		 * 
+		 * if(count == 2) { System.out.print(checkPrimeNum + " "); }
+		 * 
+		 * 
+		 * 
+		 * }
+		 * 
+		 * System.out.println();
+		 */
+
+		// Remove duplicate values from a string
+
+		/*
+		 * String s = "language";
+		 * 
+		 * Set<Character> set = new HashSet<Character>();
+		 * 
+		 * char a [] = s.toCharArray();
+		 * 
+		 * 
+		 * for(char ch1 : a) { set.add(ch1);
+		 * 
+		 * }
+		 * 
+		 * char [] b = new char [set.size()]; int count = 0;
+		 * 
+		 * 
+		 * for(char ch : set) { b[count]=ch; count++; }
+		 * 
+		 * System.out.println(Arrays.toString(b));
+		 * 
+		 * System.out.println(b.length);
+		 */
+
+		/*
+		 * String s = "language";
+		 * 
+		 * Set<Character> set = new HashSet<Character>();
+		 * 
+		 * char a [] = s.toCharArray();
+		 * 
+		 * 
+		 * for(char ch1 : a) { set.add(ch1);
+		 * 
+		 * }
+		 * 
+		 * 
+		 * StringBuilder uniqueStr = new StringBuilder(); for(char ch : set) {
+		 * uniqueStr.append(ch); }
+		 * 
+		 * System.out.println(uniqueStr.toString());
+		 * 
+		 */
+
+		/*
+		 * String s = "java is a java language and is otpion of knowring is";
+		 * 
+		 * Set<String> set = new HashSet<String>();
+		 * 
+		 * String [] arr = s.split(" ");
+		 * 
+		 * 
+		 * for(String a : arr) { set.add(a); }
+		 * 
+		 * 
+		 * 
+		 * String [] arr1 = new String[set.size()]; int count = 0;
+		 * 
+		 * for(String a1 : set) { arr1[count] = a1; count++;
+		 * 
+		 * }
+		 * 
+		 * StringBuilder uniqueStr = new StringBuilder();
+		 * 
+		 * for(String a1 : set) { uniqueStr.append(a1).append(" ");
+		 * 
+		 * }
+		 * 
+		 * 
+		 * 
+		 * System.out.println(uniqueStr.toString());
+		 * 
+		 * 
+		 */
 		
 		
 		
-		
-int [] x = {20,13,17,80,4,33,7,73};	
-		
-	for(int i =0; i<x.length;i++)	
+	int [] a = {10,30,21,10,40,67,50,40,98};
+	
+	Set<Integer> set = new LinkedHashSet<Integer>();
+	
+	for(int x : a)
 	{
-		int checkPrimeNum = x[i];
-		
-		int count = 0;
-		
-		for(int j = 1;j<=checkPrimeNum ; j++)
-		{
-		if(checkPrimeNum%j==0)
-		{
-			count++;
-		}
-		} 
-		
-		if(count == 2)
-		{
-			System.out.print(checkPrimeNum + " ");
-		}
-		
-		
-		
+		set.add(x);
 	}
 		
-	System.out.println();	
+		
+		
+	int [] b = new int [set.size()];
+	
+	int count = 0;
+	
+	for(int x : set)
+	{
+		b[count] = x;
+		count++;
+	}
+		
+		System.out.println(Arrays.toString(b));
 		
 		
 		
@@ -180,25 +266,7 @@ int [] x = {20,13,17,80,4,33,7,73};
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
 }
