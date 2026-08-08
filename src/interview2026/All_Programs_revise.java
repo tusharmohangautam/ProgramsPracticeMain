@@ -127,7 +127,7 @@ public class All_Programs_revise {
 		System.out.println("Count of consonants is : "+ Ccount);
 		
 		
-*/
+*/ 
 		
 		// Reverse an integer value without converting it into String
 		

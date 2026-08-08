@@ -12,7 +12,7 @@ public class RemoveDuplicates {
 
         for (int num : inputArray) {
             set.add(num);
-        }
+        } 
 
         // Step 2: Convert set back to array (optional)
         int[] uniqueArray = new int[set.size()];
